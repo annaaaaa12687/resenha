@@ -1,63 +1,89 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Teste</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <h1 class="titulo-principal">CARROS 3</h1> 
-        <div class="banner">
-            <img src="https://veja.abril.com.br/wp-content/uploads/2017/07/carros-3.png?w=720&h=440&crop=1" alt="" class="capa">
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-             
-        </div>
-        <h2 class="titulo-elenco">ELENCO</h2>
-        <div class="elenco">
-            <div class="ator">
-              <a href="https://pixarcars.fandom.com/wiki/Cruz_Ramirez">   <img src="https://wallpapers.com/images/high/cruz-ramirez-in-mud-cars-3-keuj2g2m7e9zskm5.webp" alt="cruz-ramirez"></a>
+body{
+    font-family: Poppins, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: linear-gradient( red, orange, yellow); 
+}
+.titulo-principal{
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
 
-                 
-              <p> Cruz-Ramirez </p>
+.banner{
+    text-align: center;
+    margin-bottom: 20px;    
+}
 
-                </div>
-                <div class="ator">
-                  <a href="https://pixarcars.fandom.com/wiki/Lightning_McQueen">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPy-HdU1bml7eLe5RI1lVMGlA97HAFv2QZ-Q&s">
-                  </a>
+.banner img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px; 
+    box-shadow: 0 0 10px black;       
+}
 
-                   <p>Relâmpago McQueen </p>
+.elenco{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
 
-                </div>
-                <div class="ator"> 
-                  <a href="https://pixarcars.fandom.com/wiki/Jackson_Storm#:~:text=Jackson%20Storm%20is%20the%20final,the%20Piston%20Cup%20Racing%20Series.">
-                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b6536b57-5510-4bca-9d38-37e06a213834/de1d0f8-df30d2d8-6732-4317-950a-e4ad0955ff69.jpg/v1/fit/w_828,h_1036,q_70,strp/cars_3__jackson_storm_by_lightningmcqueen2017_de1d0f8-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MjI4OSIsInBhdGgiOiJcL2ZcL2I2NTM2YjU3LTU1MTAtNGJjYS05ZDM4LTM3ZTA2YTIxMzgzNFwvZGUxZDBmOC1kZjMwZDJkOC02NzMyLTQzMTctOTUwYS1lNGFkMDk1NWZmNjkuanBnIiwid2lkdGgiOiI8PTE4MzEifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.qxzVET6PWwpvJQBqtyjXXCSOtHK8fNqID-VzGoh1SQw" alt="Jackson Storm"></a>
+.ator{
+    text-align: center;
+}
+
+.ator img{
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 0 10px black;
+    transition: transform 0.3s ease;
+
+}
+.ator img:hover{
+    transform: scale(1.1);
+}
+
+.titulo-elenco{
+    text-align: center;
+}
+
+.sinopse{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 30px;
+}
+
+.titulo-sinopse{
+    font-size: 30;
+}
+.site{
+    display: flex;
+    align-items: center;
+    font-size: 1.1em;
+}
+ 
+.site img{
+   width: 100px;
+   height: auto;
+   margin-right: 10px;
+
+}
+ 
+
+ .avaliacoes{
+    display: flex;
+    justify-content:space-around;
+ }
+
+ 
 
 
-                <p> Jackson Storm </p>
-                </div>   
-        </div>
 
-        <h2 class="titulo-sinopse">Sinopse</h2>
-        <div class="sinopse"> Em "Carros 3", Relâmpago McQueen, o lendário carro de corrida, é desafiado por uma nova geração de corredores mais rápidos e tecnologicamente avançados. <p> Determinado a provar que ainda tem o que é preciso para competir, McQueen embarca em uma jornada de redescoberta e reinvenção. Com a ajuda de sua jovem treinadora, Cruz Ramirez, ele se esforça para recuperar sua forma física e mental, enfrentando seu grande rival, Jackson Storm.</p> O objetivo do filme é mostrar como McQueen lida com a possibilidade de se aposentar diante desses novos desafios, explorando temas de superação, amizade e a importância de seguir seus sonhos, mesmo quando tudo parece estar contra você. <p>
-        </div>
-        
-        <div class="avaliacoes">
-            <div class="site">
-                    <img src="https://www.shareicon.net/data/2015/08/10/82796_imdb_4096x4096.png"> 
-                    <p> 7,2 </p> 
-            </div>
-            <div class="site"> 
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/AdoroCinema_2_Logo_RGB.png/1280px-AdoroCinema_2_Logo_RGB.png"> 
-                </p> 4,4 <p>
-            </div>
-            <div class="site"> 
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Omelete.svg/2560px-Omelete.svg.png"> 
-                </p> 4.0 <p>
-            </div>
-        </div>
-    </div>
-</body>
-</html>
